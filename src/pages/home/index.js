@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "../../Components/Navbar/Navbar";
 
-export const getStaticProps = async () => {
+export const getServerSideProps  = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await res.json();
 
